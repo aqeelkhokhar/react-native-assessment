@@ -4,7 +4,7 @@ import {Recipe} from '../types';
 
 interface RecipeCardProps {
   recipe: Recipe;
-  onPress: (id: number) => void;
+  onPress: (id: string) => void;
 }
 
 function RecipeCard({recipe, onPress}: RecipeCardProps) {

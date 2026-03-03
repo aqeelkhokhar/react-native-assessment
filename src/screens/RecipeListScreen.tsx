@@ -4,7 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {useRecipes} from '../hooks/useRecipes';
 import {useSearch} from '../hooks/useSearch';
-import {RootStackParamList} from '../navigation/types';
+import {RootStackParamList} from '../navigations/types';
 import {Recipe} from '../types';
 import RecipeCard from '../components/RecipeCard';
 import SearchBar from '../components/SearchBar';

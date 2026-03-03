@@ -16,7 +16,7 @@ export async function fetchRecipes(): Promise<Recipe[]> {
     return await fetchjson<Recipe[]>(API_ENDPOINTS.recipes);
 }
 
-export async function fetchRecipeById(id: number): Promise<Recipe> {
+export async function fetchRecipeById(id: string): Promise<Recipe> {
     return await fetchjson<Recipe>(API_ENDPOINTS.recipeById(id));
 }
 
