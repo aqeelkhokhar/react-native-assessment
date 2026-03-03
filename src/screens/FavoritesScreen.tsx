@@ -4,11 +4,11 @@ import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {useRecipes} from '../hooks/useRecipes';
 import {useFavorites} from '../hooks/useFavorites';
-import {RootStackParamList} from '../navigation/types';
 import {Recipe} from '../types';
 import RecipeCard from '../components/RecipeCard';
 import LoadingView from '../components/LoadingView';
 import EmptyView from '../components/EmptyView';
+import { RootStackParamList } from '../navigations/types';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
