@@ -28,4 +28,4 @@ export interface FavoriteState {
 
 export type FavoriteAction =
     | { type: 'SET_FAVORITES'; payload: string[] }
-    | { type: 'ADD_FAVORITE'; payload: string }
+    | { type: 'TOGGLE_FAVORITE'; payload: string }
