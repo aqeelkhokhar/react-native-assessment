@@ -20,6 +20,10 @@ export async function fetchRecipeById(id: number): Promise<Recipe> {
     return await fetchjson<Recipe>(API_ENDPOINTS.recipeById(id));
 }
 
+export async function getRecipes(): Promise<Recipe[]> {
+  return fetchjson<Recipe[]>(API_ENDPOINTS.recipes);
+}
+
 export async function createRecipe(recipe: Omit<Recipe, 'id'>): Promise<Recipe> {
     const response = await fetch(API_ENDPOINTS.recipes, {
         method: 'POST',
