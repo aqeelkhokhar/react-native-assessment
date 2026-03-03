@@ -1,97 +1,124 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Recipe App - React Native Assessment
 
-# Getting Started
+A React Native recipe browsing application with search, favorites, and recipe creation features. Built with TypeScript, React Navigation, Context API with `useReducer`, and a local JSON Server backend.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Tech Stack
 
-## Step 1: Start Metro
+- **React Native** 0.84 with TypeScript
+- **React Navigation** (Native Stack + Bottom Tabs)
+- **Context API + useReducer** for state management
+- **AsyncStorage** for persisting favorites
+- **JSON Server** as a local REST API
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Prerequisites
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- Node.js >= 22.11.0
+- React Native CLI (`@react-native-community/cli`)
+- Xcode (for iOS) / Android Studio (for Android)
+- CocoaPods (for iOS)
 
-```sh
-# Using npm
-npm start
+## Getting Started
 
-# OR using Yarn
-yarn start
+### 1. Install dependencies
+
+```bash
+npm install
 ```
 
-## Step 2: Build and run your app
+### 2. Install iOS pods
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+cd ios && pod install && cd ..
 ```
 
-### iOS
+### 3. Start the JSON Server
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+npm run server
 ```
 
-Then, and every time you update your native dependencies, run:
+This starts a REST API at `http://localhost:3001` serving recipe data from `db.json`.
 
-```sh
-bundle exec pod install
-```
+### 4. Run the app
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+```bash
+# iOS
 npm run ios
 
-# OR using Yarn
-yarn ios
+# Android
+npm run android
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## Project Structure
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+```
+src/
+├── types/            # TypeScript interfaces (Recipe, RecipeState, FavoriteState)
+├── constants/        # API base URL and endpoint configuration
+├── services/         # API service layer (fetch, create recipes)
+├── contexts/         # React Context providers and reducers
+│   ├── RecipeContext.tsx
+│   ├── FavoritesContext.tsx
+│   └── reducers.ts
+├── hooks/            # Custom hooks
+│   ├── useRecipes.ts    # Fetch recipes on mount
+│   ├── useFavorites.ts  # Toggle and persist favorites
+│   └── useSearch.ts     # Debounced search with filtering
+├── components/       # Reusable UI components
+│   ├── RecipeCard.tsx
+│   ├── SearchBar.tsx
+│   ├── FavoriteButton.tsx
+│   ├── LoadingView.tsx
+│   ├── ErrorView.tsx
+│   └── EmptyView.tsx
+├── screens/          # App screens
+│   ├── RecipeListScreen.tsx
+│   ├── RecipeDetailScreen.tsx
+│   ├── FavoritesScreen.tsx
+│   └── AddRecipeScreen.tsx
+└── navigations/      # Navigation configuration and types
+    ├── types.ts
+    └── TabNavigator.tsx
+```
 
-## Step 3: Modify your app
+## Available Scripts
 
-Now that you have successfully run the app, let's make changes!
+| Script           | Description                          |
+| ---------------- | ------------------------------------ |
+| `npm run ios`    | Run on iOS simulator                 |
+| `npm run android`| Run on Android emulator              |
+| `npm run server` | Start JSON Server on port 3001       |
+| `npm test`       | Run unit tests with Jest             |
+| `npm run lint`   | Run ESLint                           |
+| `npm start`      | Start Metro bundler                  |
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## Testing
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+The project includes unit tests for reducers and search logic:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+```bash
+npm test
+```
 
-## Congratulations! :tada:
+- `__tests__/reducers.test.ts` - Tests for `recipeReducer` and `favoriteReducer`
+- `__tests__/useSearch.test.ts` - Tests for `filterRecipes` utility
 
-You've successfully run and modified your React Native App. :partying_face:
+## API Endpoints
 
-### Now what?
+The JSON Server provides the following endpoints at `http://localhost:3001`:
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+| Method | Endpoint            | Description         |
+| ------ | ------------------- | ------------------- |
+| GET    | `/recipes`          | List all recipes    |
+| GET    | `/recipes/:id`      | Get recipe by ID    |
+| POST   | `/recipes`          | Create a new recipe |
 
-# Troubleshooting
+## Features
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Browse recipes in a scrollable list
+- Search recipes by name or ingredient (with 300ms debounce)
+- Pull-to-refresh recipe list
+- View full recipe details with ingredients and step-by-step instructions
+- Favorite/unfavorite recipes (persisted with AsyncStorage)
+- Dedicated favorites tab
+- Add new recipes with form validation
