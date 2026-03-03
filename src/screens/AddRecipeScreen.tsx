@@ -10,9 +10,9 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {RootStackParamList} from '../navigation/types';
 import {createRecipe} from '../services/api';
-import {useRecipeContext} from '../context/RecipeContext';
+import { RootStackParamList } from '../navigations/types';
+import { useRecipeContext } from '../contexts/RecipeContext';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 

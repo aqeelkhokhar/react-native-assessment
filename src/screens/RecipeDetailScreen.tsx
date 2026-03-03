@@ -2,13 +2,14 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {RootStackParamList} from '../navigation/types';
+
 import {Recipe} from '../types';
-import {getRecipeById} from '../services/api';
 import {useFavorites} from '../hooks/useFavorites';
 import FavoriteButton from '../components/FavoriteButton';
 import LoadingView from '../components/LoadingView';
 import ErrorView from '../components/ErrorView';
+import { RootStackParamList } from '../navigations/types';
+import { fetchRecipeById } from '../services/api';
 
 type DetailRouteProp = RouteProp<RootStackParamList, 'RecipeDetail'>;
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -27,7 +28,7 @@ export default function RecipeDetailScreen() {
     setLoading(true);
     setError(null);
     try {
-      const data = await getRecipeById(recipeId);
+      const data = await fetchRecipeById(recipeId);
       setRecipe(data);
       navigation.setOptions({title: data.name});
     } catch (err) {
