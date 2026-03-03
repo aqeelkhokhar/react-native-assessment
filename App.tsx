@@ -3,12 +3,13 @@ import {StatusBar, useColorScheme} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {RecipeProvider} from './src/context/RecipeContext';
-import {FavoritesProvider} from './src/context/FavoritesContext';
-import {RootStackParamList} from './src/navigation/types';
-import TabNavigator from './src/navigation/TabNavigator';
+
 import RecipeDetailScreen from './src/screens/RecipeDetailScreen';
 import AddRecipeScreen from './src/screens/AddRecipeScreen';
+import { RootStackParamList } from './src/navigations/types';
+import { RecipeProvider } from './src/contexts/RecipeContext';
+import { FavoritesProvider } from './src/contexts/FavoritesContext';
+import TabNavigator from './src/navigations/TabNavigator';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
