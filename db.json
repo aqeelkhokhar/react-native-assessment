@@ -1,0 +1,304 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Spaghetti Carbonara",
+      "description": "Classic Italian pasta dish with creamy egg sauce and crispy guanciale",
+      "ingredients": [
+        "400g spaghetti",
+        "200g guanciale",
+        "4 large eggs",
+        "100g pecorino cheese",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Boil pasta in salted water until al dente",
+        "Cut guanciale into small strips and cook until crispy",
+        "Whisk eggs with grated pecorino and black pepper",
+        "Drain pasta and toss with guanciale",
+        "Remove from heat and mix in egg mixture quickly",
+        "Serve immediately with extra pecorino on top"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/FF6347/FFFFFF?text=Carbonara"
+    },
+    {
+      "id": "2",
+      "name": "Chicken Tikka Masala",
+      "description": "Tender chicken pieces in a rich and creamy spiced tomato sauce",
+      "ingredients": [
+        "500g chicken breast",
+        "200ml yogurt",
+        "400g canned tomatoes",
+        "200ml heavy cream",
+        "2 tbsp tikka masala paste",
+        "1 onion",
+        "3 cloves garlic",
+        "Fresh cilantro"
+      ],
+      "instructions": [
+        "Marinate chicken in yogurt and spices for 1 hour",
+        "Grill or pan-fry chicken until charred",
+        "Saute onion and garlic until soft",
+        "Add tikka paste and cook for 2 minutes",
+        "Add canned tomatoes and simmer for 15 minutes",
+        "Stir in cream and add chicken pieces",
+        "Garnish with fresh cilantro and serve with rice"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/FF8C00/FFFFFF?text=Tikka+Masala"
+    },
+    {
+      "id": "3",
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce with homemade Caesar dressing and crunchy croutons",
+      "ingredients": [
+        "2 heads romaine lettuce",
+        "100g parmesan cheese",
+        "2 cups croutons",
+        "2 anchovy fillets",
+        "1 egg yolk",
+        "2 tbsp lemon juice",
+        "1 tsp Dijon mustard",
+        "120ml olive oil"
+      ],
+      "instructions": [
+        "Wash and chop romaine lettuce into bite-sized pieces",
+        "Blend anchovy, egg yolk, lemon juice, and mustard",
+        "Slowly drizzle in olive oil while blending to emulsify",
+        "Toss lettuce with dressing until well coated",
+        "Top with croutons and shaved parmesan",
+        "Season with black pepper and serve immediately"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/32CD32/FFFFFF?text=Caesar+Salad"
+    },
+    {
+      "id": "4",
+      "name": "Beef Tacos",
+      "description": "Seasoned ground beef in crispy tortillas with fresh toppings",
+      "ingredients": [
+        "500g ground beef",
+        "8 taco shells",
+        "1 onion",
+        "2 tomatoes",
+        "1 cup shredded lettuce",
+        "100g cheddar cheese",
+        "2 tbsp taco seasoning",
+        "Sour cream",
+        "Salsa"
+      ],
+      "instructions": [
+        "Brown ground beef in a skillet over medium heat",
+        "Add diced onion and cook until soft",
+        "Stir in taco seasoning and a splash of water",
+        "Simmer for 5 minutes until sauce thickens",
+        "Warm taco shells in the oven for 2 minutes",
+        "Fill shells with beef and top with lettuce, tomato, cheese",
+        "Serve with sour cream and salsa on the side"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/FFD700/FFFFFF?text=Beef+Tacos"
+    },
+    {
+      "id": "5",
+      "name": "Margherita Pizza",
+      "description": "Traditional Italian pizza with fresh mozzarella, tomatoes, and basil",
+      "ingredients": [
+        "300g pizza dough",
+        "200g San Marzano tomatoes",
+        "200g fresh mozzarella",
+        "Fresh basil leaves",
+        "2 tbsp olive oil",
+        "Salt"
+      ],
+      "instructions": [
+        "Preheat oven to 250C with a pizza stone",
+        "Stretch dough into a 12-inch round",
+        "Crush tomatoes and spread over dough",
+        "Tear mozzarella and distribute evenly",
+        "Bake for 8-10 minutes until crust is golden",
+        "Top with fresh basil and drizzle with olive oil"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/DC143C/FFFFFF?text=Pizza"
+    },
+    {
+      "id": "6",
+      "name": "Pad Thai",
+      "description": "Stir-fried rice noodles with shrimp, peanuts, and tangy tamarind sauce",
+      "ingredients": [
+        "200g rice noodles",
+        "300g shrimp",
+        "2 eggs",
+        "100g bean sprouts",
+        "3 tbsp tamarind paste",
+        "2 tbsp fish sauce",
+        "1 tbsp sugar",
+        "50g crushed peanuts",
+        "2 green onions",
+        "1 lime"
+      ],
+      "instructions": [
+        "Soak rice noodles in warm water for 30 minutes",
+        "Mix tamarind paste, fish sauce, and sugar for the sauce",
+        "Stir-fry shrimp until pink, then set aside",
+        "Scramble eggs in the same wok",
+        "Add drained noodles and sauce, toss to coat",
+        "Add shrimp back and toss with bean sprouts",
+        "Serve topped with peanuts, green onions, and lime wedge"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/FF4500/FFFFFF?text=Pad+Thai"
+    },
+    {
+      "id": "7",
+      "name": "French Onion Soup",
+      "description": "Rich beef broth with caramelized onions topped with melted Gruyere cheese",
+      "ingredients": [
+        "4 large onions",
+        "50g butter",
+        "1L beef broth",
+        "200ml white wine",
+        "4 slices baguette",
+        "200g Gruyere cheese",
+        "2 tbsp flour",
+        "Fresh thyme"
+      ],
+      "instructions": [
+        "Slice onions thinly and cook in butter over low heat for 40 minutes",
+        "Sprinkle flour over caramelized onions and stir",
+        "Add white wine and cook until reduced by half",
+        "Pour in beef broth and add thyme, simmer for 20 minutes",
+        "Ladle soup into oven-safe bowls",
+        "Top with baguette slice and grated Gruyere",
+        "Broil until cheese is bubbly and golden"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/8B4513/FFFFFF?text=Onion+Soup"
+    },
+    {
+      "id": "8",
+      "name": "Sushi Rolls",
+      "description": "Homemade maki rolls with fresh salmon, avocado, and cucumber",
+      "ingredients": [
+        "300g sushi rice",
+        "200g fresh salmon",
+        "1 avocado",
+        "1 cucumber",
+        "4 nori sheets",
+        "3 tbsp rice vinegar",
+        "Soy sauce",
+        "Wasabi",
+        "Pickled ginger"
+      ],
+      "instructions": [
+        "Cook sushi rice and season with rice vinegar",
+        "Slice salmon, avocado, and cucumber into thin strips",
+        "Place nori on bamboo mat, spread rice evenly",
+        "Arrange fillings along the center",
+        "Roll tightly using the bamboo mat",
+        "Slice each roll into 6-8 pieces with a wet knife",
+        "Serve with soy sauce, wasabi, and pickled ginger"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/FF69B4/FFFFFF?text=Sushi"
+    },
+    {
+      "id": "9",
+      "name": "Greek Moussaka",
+      "description": "Layered eggplant and ground lamb casserole with creamy bechamel topping",
+      "ingredients": [
+        "3 large eggplants",
+        "500g ground lamb",
+        "400g canned tomatoes",
+        "1 onion",
+        "500ml milk",
+        "50g butter",
+        "50g flour",
+        "100g parmesan",
+        "Cinnamon",
+        "Nutmeg"
+      ],
+      "instructions": [
+        "Slice eggplants and salt them, let drain for 30 minutes",
+        "Grill or fry eggplant slices until golden",
+        "Brown lamb with diced onion and add tomatoes and cinnamon",
+        "Make bechamel: melt butter, add flour, whisk in milk",
+        "Layer eggplant, meat sauce, eggplant, meat sauce in a baking dish",
+        "Pour bechamel over top and sprinkle with parmesan",
+        "Bake at 180C for 45 minutes until golden brown"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/DAA520/FFFFFF?text=Moussaka"
+    },
+    {
+      "id": "10",
+      "name": "Banana Pancakes",
+      "description": "Fluffy pancakes made with ripe bananas and a hint of cinnamon",
+      "ingredients": [
+        "2 ripe bananas",
+        "2 eggs",
+        "150g flour",
+        "200ml milk",
+        "2 tbsp sugar",
+        "1 tsp baking powder",
+        "1 tsp cinnamon",
+        "Butter for cooking",
+        "Maple syrup"
+      ],
+      "instructions": [
+        "Mash bananas in a large bowl until smooth",
+        "Whisk in eggs, milk, and sugar",
+        "Add flour, baking powder, and cinnamon, mix until just combined",
+        "Heat butter in a non-stick pan over medium heat",
+        "Pour batter to form pancakes, cook until bubbles appear",
+        "Flip and cook until golden brown on both sides",
+        "Serve stacked with maple syrup and sliced banana"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/DEB887/FFFFFF?text=Pancakes"
+    },
+    {
+      "id": "11",
+      "name": "Korean Bibimbap",
+      "description": "Mixed rice bowl with assorted vegetables, beef, and spicy gochujang sauce",
+      "ingredients": [
+        "300g steamed rice",
+        "200g beef sirloin",
+        "1 carrot",
+        "1 zucchini",
+        "100g spinach",
+        "100g bean sprouts",
+        "2 eggs",
+        "3 tbsp gochujang",
+        "Sesame oil",
+        "Sesame seeds"
+      ],
+      "instructions": [
+        "Cook rice and keep warm",
+        "Slice beef thinly and marinate in soy sauce and sesame oil",
+        "Julienne carrot and zucchini, blanch spinach and bean sprouts separately",
+        "Stir-fry each vegetable separately with a pinch of salt",
+        "Sear beef in a hot pan until just cooked",
+        "Arrange rice in a bowl, top with vegetables and beef in sections",
+        "Place a fried egg on top, serve with gochujang sauce"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/FF6347/FFFFFF?text=Bibimbap"
+    },
+    {
+      "id": "12",
+      "name": "Chocolate Lava Cake",
+      "description": "Warm chocolate cake with a gooey molten center, served with vanilla ice cream",
+      "ingredients": [
+        "200g dark chocolate",
+        "100g butter",
+        "3 eggs",
+        "100g sugar",
+        "50g flour",
+        "Cocoa powder for dusting",
+        "Vanilla ice cream"
+      ],
+      "instructions": [
+        "Preheat oven to 200C and grease 4 ramekins",
+        "Melt chocolate and butter together over a double boiler",
+        "Whisk eggs and sugar until thick and pale",
+        "Fold chocolate mixture into egg mixture",
+        "Gently fold in flour until just combined",
+        "Pour into ramekins and bake for 12 minutes",
+        "Invert onto plates and serve immediately with ice cream"
+      ],
+      "imageUrl": "https://via.placeholder.com/150/4B0082/FFFFFF?text=Lava+Cake"
+    }
+  ]
+}
